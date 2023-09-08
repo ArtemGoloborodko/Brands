@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание</title>
+    <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/jquery.inputmask.min.js"></script> -->
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+</body>
+<header class="header_padding">
+    <nav>
+        <div class="container">
+            <ul class="navi_list list-reset flex">
+                <li class="navi_item"><a href="#">ГЛАВНАЯ</a></li>
+                <li class="navi_item"><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
+                <li class="navi_item"><a href="#">ПРОФИЛЬ И ИНТЕРЕСЫ</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <div class="container flex container__row">
+            <aside class="menu">
+                <ul class="menu_list list-reset flex">
+                    <li class="menu_item"><a class="link__hover" href="#">БОНУСЫ И ПРЕДЛОЖЕНИЯ</a></li>
+                    <li class="menu_item"><a class="link__hover" href="#">ПРОФИЛЬ И ИНТЕРЕСЫ</a></li>
+                    <li class="menu_item"><a class="link__hover" href="#">МОИ ПОКУПКИ</a></li>
+                    <li class="menu_item"><a class="link__hover" href="#">ИЗБРАННОЕ</a></li>
+                    <li class="menu_item"><a class="link__hover" href="#">ПЕРСОНАЛЬНЫЙ МЕНЕДЖЕР</a></li>
+                </ul>
+            </aside>
+
+            <div class="block_profile flex">
+                <h2 class="block_profile__zag">ПРОФИЛЬ И ИНТЕРЕСЫ</h2>
+                <div class="block_profile__info">
+                    Здесь вы&nbsp;можете изменять свой email и&nbsp;пароль, а&nbsp;также указать дополнительные номера
+                    телефонов для использован ия&nbsp;вашей карты и&nbsp;указать свои интересы
+                </div>
+                <div class="block_profile__form">
+                    <form class="form_position flex">
+                        <div class="block_input">
+
+                            <span class="name_emali">Email</span>
+                            <span class="bol_yellow">+2%</span>
+                            <input class="block_profile___input" id="Email" type="email" name="user_email"
+                                placeholder="E-mail*" data-target="eml" required>
+
+                            <botton class="btn-reset btn_inpun__save btn flex" id="btnSaveEmail" data-path="eml"><svg
+                                    width="18" height="18" viewbox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.5631 15.3297C15.8736 15.3297 16.1256 15.5817 16.1256 15.8922C16.1256 16.2027 15.8736 16.4547 15.5631 16.4547H10.1233C9.81283 16.4547 9.56083 16.2027 9.56083 15.8922C9.56083 15.5817 9.81283 15.3297 10.1233 15.3297H15.5631ZM12.0874 2.74023C12.1249 2.76948 13.3797 3.74448 13.3797 3.74448C13.8357 4.01598 14.1919 4.50123 14.3269 5.07573C14.4612 5.64423 14.3637 6.23073 14.0509 6.72648C14.0488 6.72979 14.0468 6.73305 14.0395 6.74277L14.0339 6.75028C13.9831 6.81719 13.7624 7.09623 12.6486 8.49167C12.6383 8.50996 12.6266 8.52709 12.6138 8.54373C12.595 8.56827 12.5746 8.59082 12.5527 8.61135C12.4768 8.707 12.3965 8.80751 12.3122 8.91318L12.1412 9.12728C11.7885 9.56901 11.3701 10.0928 10.8738 10.7141L10.619 11.0329C9.66078 12.2323 8.43355 13.7679 6.86143 15.7347C6.51718 16.1637 6.00118 16.4135 5.44693 16.4202L2.71768 16.4547H2.71018C2.44993 16.4547 2.22343 16.2762 2.16268 16.022L1.54843 13.4187C1.42168 12.8795 1.54768 12.323 1.89343 11.891L8.95843 3.05448C8.96143 3.05148 8.96368 3.04773 8.96668 3.04473C9.74143 2.11848 11.1424 1.98198 12.0874 2.74023ZM8.17072 5.84025L2.77168 12.5937C2.64343 12.7542 2.59618 12.9612 2.64343 13.16L3.15418 15.3237L5.43343 15.2952C5.65018 15.293 5.85043 15.1962 5.98318 15.0312C6.66679 14.1759 7.52597 13.1009 8.40932 11.9955L8.72185 11.6044L9.0349 11.2127C9.86334 10.1759 10.6818 9.15155 11.3666 8.29415L8.17072 5.84025ZM9.83293 3.76248L8.87347 4.96125L12.0691 7.41445C12.6841 6.64402 13.0888 6.1366 13.1262 6.08823C13.2492 5.88873 13.2972 5.60673 13.2327 5.33523C13.1667 5.05698 12.9934 4.82073 12.7437 4.66998C12.6904 4.63323 11.4267 3.65223 11.3877 3.62148C10.9122 3.24048 10.2184 3.30648 9.83293 3.76248Z"
+                                        fill="#88D790" />
+                                </svg>сохранить</botton>
+
+                            <botton class="btn-reset btn_inpun__change btn_change flex" id="btnChangeEmail" data-change="eml"><svg
+                                    width="18" height="18" viewbox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.5631 15.3297C15.8736 15.3297 16.1256 15.5817 16.1256 15.8922C16.1256 16.2027 15.8736 16.4547 15.5631 16.4547H10.1233C9.81283 16.4547 9.56083 16.2027 9.56083 15.8922C9.56083 15.5817 9.81283 15.3297 10.1233 15.3297H15.5631ZM12.0874 2.74023C12.1249 2.76948 13.3797 3.74448 13.3797 3.74448C13.8357 4.01598 14.1919 4.50123 14.3269 5.07573C14.4612 5.64423 14.3637 6.23073 14.0509 6.72648C14.0488 6.72979 14.0468 6.73305 14.0395 6.74277L14.0339 6.75028C13.9831 6.81719 13.7624 7.09623 12.6486 8.49167C12.6383 8.50996 12.6266 8.52709 12.6138 8.54373C12.595 8.56827 12.5746 8.59082 12.5527 8.61135C12.4768 8.707 12.3965 8.80751 12.3122 8.91318L12.1412 9.12728C11.7885 9.56901 11.3701 10.0928 10.8738 10.7141L10.619 11.0329C9.66078 12.2323 8.43355 13.7679 6.86143 15.7347C6.51718 16.1637 6.00118 16.4135 5.44693 16.4202L2.71768 16.4547H2.71018C2.44993 16.4547 2.22343 16.2762 2.16268 16.022L1.54843 13.4187C1.42168 12.8795 1.54768 12.323 1.89343 11.891L8.95843 3.05448C8.96143 3.05148 8.96368 3.04773 8.96668 3.04473C9.74143 2.11848 11.1424 1.98198 12.0874 2.74023ZM8.17072 5.84025L2.77168 12.5937C2.64343 12.7542 2.59618 12.9612 2.64343 13.16L3.15418 15.3237L5.43343 15.2952C5.65018 15.293 5.85043 15.1962 5.98318 15.0312C6.66679 14.1759 7.52597 13.1009 8.40932 11.9955L8.72185 11.6044L9.0349 11.2127C9.86334 10.1759 10.6818 9.15155 11.3666 8.29415L8.17072 5.84025ZM9.83293 3.76248L8.87347 4.96125L12.0691 7.41445C12.6841 6.64402 13.0888 6.1366 13.1262 6.08823C13.2492 5.88873 13.2972 5.60673 13.2327 5.33523C13.1667 5.05698 12.9934 4.82073 12.7437 4.66998C12.6904 4.63323 11.4267 3.65223 11.3877 3.62148C10.9122 3.24048 10.2184 3.30648 9.83293 3.76248Z"
+                                        fill="#FFB911" />
+                                </svg>изменить</botton>
+                        </div>
+
+                        <div class="block_input block_input--margen">
+                            <span class="name_pasw">Пароль</span>
+                            <input class="block_profile___input" id="inputPas" type="password" name="user_password"
+                                placeholder="password*" data-target="pas" required>
+
+                            <botton class="btn-reset btn_inpun__save btn flex" id="btnSavePas" data-path="pas"><svg width="18"
+                                    height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.5631 15.3297C15.8736 15.3297 16.1256 15.5817 16.1256 15.8922C16.1256 16.2027 15.8736 16.4547 15.5631 16.4547H10.1233C9.81283 16.4547 9.56083 16.2027 9.56083 15.8922C9.56083 15.5817 9.81283 15.3297 10.1233 15.3297H15.5631ZM12.0874 2.74023C12.1249 2.76948 13.3797 3.74448 13.3797 3.74448C13.8357 4.01598 14.1919 4.50123 14.3269 5.07573C14.4612 5.64423 14.3637 6.23073 14.0509 6.72648C14.0488 6.72979 14.0468 6.73305 14.0395 6.74277L14.0339 6.75028C13.9831 6.81719 13.7624 7.09623 12.6486 8.49167C12.6383 8.50996 12.6266 8.52709 12.6138 8.54373C12.595 8.56827 12.5746 8.59082 12.5527 8.61135C12.4768 8.707 12.3965 8.80751 12.3122 8.91318L12.1412 9.12728C11.7885 9.56901 11.3701 10.0928 10.8738 10.7141L10.619 11.0329C9.66078 12.2323 8.43355 13.7679 6.86143 15.7347C6.51718 16.1637 6.00118 16.4135 5.44693 16.4202L2.71768 16.4547H2.71018C2.44993 16.4547 2.22343 16.2762 2.16268 16.022L1.54843 13.4187C1.42168 12.8795 1.54768 12.323 1.89343 11.891L8.95843 3.05448C8.96143 3.05148 8.96368 3.04773 8.96668 3.04473C9.74143 2.11848 11.1424 1.98198 12.0874 2.74023ZM8.17072 5.84025L2.77168 12.5937C2.64343 12.7542 2.59618 12.9612 2.64343 13.16L3.15418 15.3237L5.43343 15.2952C5.65018 15.293 5.85043 15.1962 5.98318 15.0312C6.66679 14.1759 7.52597 13.1009 8.40932 11.9955L8.72185 11.6044L9.0349 11.2127C9.86334 10.1759 10.6818 9.15155 11.3666 8.29415L8.17072 5.84025ZM9.83293 3.76248L8.87347 4.96125L12.0691 7.41445C12.6841 6.64402 13.0888 6.1366 13.1262 6.08823C13.2492 5.88873 13.2972 5.60673 13.2327 5.33523C13.1667 5.05698 12.9934 4.82073 12.7437 4.66998C12.6904 4.63323 11.4267 3.65223 11.3877 3.62148C10.9122 3.24048 10.2184 3.30648 9.83293 3.76248Z"
+                                        fill="#88D790" />
+                                </svg>сохранить</botton>
+
+                            <botton class="btn-reset btn_inpun__change btn_change flex" id="btnChangePas" data-change="pas"><svg
+                                    width="18" height="18" viewbox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.5631 15.3297C15.8736 15.3297 16.1256 15.5817 16.1256 15.8922C16.1256 16.2027 15.8736 16.4547 15.5631 16.4547H10.1233C9.81283 16.4547 9.56083 16.2027 9.56083 15.8922C9.56083 15.5817 9.81283 15.3297 10.1233 15.3297H15.5631ZM12.0874 2.74023C12.1249 2.76948 13.3797 3.74448 13.3797 3.74448C13.8357 4.01598 14.1919 4.50123 14.3269 5.07573C14.4612 5.64423 14.3637 6.23073 14.0509 6.72648C14.0488 6.72979 14.0468 6.73305 14.0395 6.74277L14.0339 6.75028C13.9831 6.81719 13.7624 7.09623 12.6486 8.49167C12.6383 8.50996 12.6266 8.52709 12.6138 8.54373C12.595 8.56827 12.5746 8.59082 12.5527 8.61135C12.4768 8.707 12.3965 8.80751 12.3122 8.91318L12.1412 9.12728C11.7885 9.56901 11.3701 10.0928 10.8738 10.7141L10.619 11.0329C9.66078 12.2323 8.43355 13.7679 6.86143 15.7347C6.51718 16.1637 6.00118 16.4135 5.44693 16.4202L2.71768 16.4547H2.71018C2.44993 16.4547 2.22343 16.2762 2.16268 16.022L1.54843 13.4187C1.42168 12.8795 1.54768 12.323 1.89343 11.891L8.95843 3.05448C8.96143 3.05148 8.96368 3.04773 8.96668 3.04473C9.74143 2.11848 11.1424 1.98198 12.0874 2.74023ZM8.17072 5.84025L2.77168 12.5937C2.64343 12.7542 2.59618 12.9612 2.64343 13.16L3.15418 15.3237L5.43343 15.2952C5.65018 15.293 5.85043 15.1962 5.98318 15.0312C6.66679 14.1759 7.52597 13.1009 8.40932 11.9955L8.72185 11.6044L9.0349 11.2127C9.86334 10.1759 10.6818 9.15155 11.3666 8.29415L8.17072 5.84025ZM9.83293 3.76248L8.87347 4.96125L12.0691 7.41445C12.6841 6.64402 13.0888 6.1366 13.1262 6.08823C13.2492 5.88873 13.2972 5.60673 13.2327 5.33523C13.1667 5.05698 12.9934 4.82073 12.7437 4.66998C12.6904 4.63323 11.4267 3.65223 11.3877 3.62148C10.9122 3.24048 10.2184 3.30648 9.83293 3.76248Z"
+                                        fill="#FFB911" />
+                                </svg>изменить</botton>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <div class="container flex container__content">
+        <div class="block_profile block--padding flex">
+            <h2 class="block_profile__zag">ДОПОЛНИТЕЛЬНЫЕ КОНТАКТНЫЕ ТЕЛЕФОНЫ</h2>
+            <div class="block_profile__info">
+                Вы&nbsp;можете добавить до&nbsp;двух дополнительных номеров телефона.
+                <p>Указанные номера могут быть использованы членами вашей семьи для получения скидки, накопления баллов
+                    и&nbsp;покупок по&nbsp;вашей карте.</p>
+            </div>
+            <div class="block_profile__form">
+                <form class="form_position flex">
+                    <div class="block_input">
+
+                        <span class="name_emali">Телефон 1</span>
+                        <input class="block_profile___input tel" id="inputTel_1" type="tel" name="user_tel1"
+                            placeholder="Введите телефон*" data-target="tel_1" required>
+                        <botton class="btn-reset btn btn_inpun__save flex" id="btnSaveTel_1" data-path="tel_1"><svg width="18"
+                                height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.5631 15.3297C15.8736 15.3297 16.1256 15.5817 16.1256 15.8922C16.1256 16.2027 15.8736 16.4547 15.5631 16.4547H10.1233C9.81283 16.4547 9.56083 16.2027 9.56083 15.8922C9.56083 15.5817 9.81283 15.3297 10.1233 15.3297H15.5631ZM12.0874 2.74023C12.1249 2.76948 13.3797 3.74448 13.3797 3.74448C13.8357 4.01598 14.1919 4.50123 14.3269 5.07573C14.4612 5.64423 14.3637 6.23073 14.0509 6.72648C14.0488 6.72979 14.0468 6.73305 14.0395 6.74277L14.0339 6.75028C13.9831 6.81719 13.7624 7.09623 12.6486 8.49167C12.6383 8.50996 12.6266 8.52709 12.6138 8.54373C12.595 8.56827 12.5746 8.59082 12.5527 8.61135C12.4768 8.707 12.3965 8.80751 12.3122 8.91318L12.1412 9.12728C11.7885 9.56901 11.3701 10.0928 10.8738 10.7141L10.619 11.0329C9.66078 12.2323 8.43355 13.7679 6.86143 15.7347C6.51718 16.1637 6.00118 16.4135 5.44693 16.4202L2.71768 16.4547H2.71018C2.44993 16.4547 2.22343 16.2762 2.16268 16.022L1.54843 13.4187C1.42168 12.8795 1.54768 12.323 1.89343 11.891L8.95843 3.05448C8.96143 3.05148 8.96368 3.04773 8.96668 3.04473C9.74143 2.11848 11.1424 1.98198 12.0874 2.74023ZM8.17072 5.84025L2.77168 12.5937C2.64343 12.7542 2.59618 12.9612 2.64343 13.16L3.15418 15.3237L5.43343 15.2952C5.65018 15.293 5.85043 15.1962 5.98318 15.0312C6.66679 14.1759 7.52597 13.1009 8.40932 11.9955L8.72185 11.6044L9.0349 11.2127C9.86334 10.1759 10.6818 9.15155 11.3666 8.29415L8.17072 5.84025ZM9.83293 3.76248L8.87347 4.96125L12.0691 7.41445C12.6841 6.64402 13.0888 6.1366 13.1262 6.08823C13.2492 5.88873 13.2972 5.60673 13.2327 5.33523C13.1667 5.05698 12.9934 4.82073 12.7437 4.66998C12.6904 4.63323 11.4267 3.65223 11.3877 3.62148C10.9122 3.24048 10.2184 3.30648 9.83293 3.76248Z"
+                                    fill="#88D790" />
+                            </svg>сохранить</botton>
+
+                        <botton class="btn-reset btn_inpun__change btn_change flex" id="btnChangeTel_1" data-change="tel_1"><svg
+                                width="18" height="18" viewbox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.5631 15.3297C15.8736 15.3297 16.1256 15.5817 16.1256 15.8922C16.1256 16.2027 15.8736 16.4547 15.5631 16.4547H10.1233C9.81283 16.4547 9.56083 16.2027 9.56083 15.8922C9.56083 15.5817 9.81283 15.3297 10.1233 15.3297H15.5631ZM12.0874 2.74023C12.1249 2.76948 13.3797 3.74448 13.3797 3.74448C13.8357 4.01598 14.1919 4.50123 14.3269 5.07573C14.4612 5.64423 14.3637 6.23073 14.0509 6.72648C14.0488 6.72979 14.0468 6.73305 14.0395 6.74277L14.0339 6.75028C13.9831 6.81719 13.7624 7.09623 12.6486 8.49167C12.6383 8.50996 12.6266 8.52709 12.6138 8.54373C12.595 8.56827 12.5746 8.59082 12.5527 8.61135C12.4768 8.707 12.3965 8.80751 12.3122 8.91318L12.1412 9.12728C11.7885 9.56901 11.3701 10.0928 10.8738 10.7141L10.619 11.0329C9.66078 12.2323 8.43355 13.7679 6.86143 15.7347C6.51718 16.1637 6.00118 16.4135 5.44693 16.4202L2.71768 16.4547H2.71018C2.44993 16.4547 2.22343 16.2762 2.16268 16.022L1.54843 13.4187C1.42168 12.8795 1.54768 12.323 1.89343 11.891L8.95843 3.05448C8.96143 3.05148 8.96368 3.04773 8.96668 3.04473C9.74143 2.11848 11.1424 1.98198 12.0874 2.74023ZM8.17072 5.84025L2.77168 12.5937C2.64343 12.7542 2.59618 12.9612 2.64343 13.16L3.15418 15.3237L5.43343 15.2952C5.65018 15.293 5.85043 15.1962 5.98318 15.0312C6.66679 14.1759 7.52597 13.1009 8.40932 11.9955L8.72185 11.6044L9.0349 11.2127C9.86334 10.1759 10.6818 9.15155 11.3666 8.29415L8.17072 5.84025ZM9.83293 3.76248L8.87347 4.96125L12.0691 7.41445C12.6841 6.64402 13.0888 6.1366 13.1262 6.08823C13.2492 5.88873 13.2972 5.60673 13.2327 5.33523C13.1667 5.05698 12.9934 4.82073 12.7437 4.66998C12.6904 4.63323 11.4267 3.65223 11.3877 3.62148C10.9122 3.24048 10.2184 3.30648 9.83293 3.76248Z"
+                                    fill="#FFB911" />
+                            </svg>изменить</botton>
+                    </div>
+
+                    <div class="block_input block_input--margen">
+                        <span class="name_pasw">Телефон 2</span>
+                        <input class="block_profile___input tel" id="inputTel_2" type="tel" name="user_tel2"
+                            placeholder="Введите телефон*" data-target="tel_2" required>
+
+                        <botton class="btn-reset btn btn_inpun__save flex" id="btnSaveTel_2" data-path="tel_2" ><svg width="18"
+                                height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.5631 15.3297C15.8736 15.3297 16.1256 15.5817 16.1256 15.8922C16.1256 16.2027 15.8736 16.4547 15.5631 16.4547H10.1233C9.81283 16.4547 9.56083 16.2027 9.56083 15.8922C9.56083 15.5817 9.81283 15.3297 10.1233 15.3297H15.5631ZM12.0874 2.74023C12.1249 2.76948 13.3797 3.74448 13.3797 3.74448C13.8357 4.01598 14.1919 4.50123 14.3269 5.07573C14.4612 5.64423 14.3637 6.23073 14.0509 6.72648C14.0488 6.72979 14.0468 6.73305 14.0395 6.74277L14.0339 6.75028C13.9831 6.81719 13.7624 7.09623 12.6486 8.49167C12.6383 8.50996 12.6266 8.52709 12.6138 8.54373C12.595 8.56827 12.5746 8.59082 12.5527 8.61135C12.4768 8.707 12.3965 8.80751 12.3122 8.91318L12.1412 9.12728C11.7885 9.56901 11.3701 10.0928 10.8738 10.7141L10.619 11.0329C9.66078 12.2323 8.43355 13.7679 6.86143 15.7347C6.51718 16.1637 6.00118 16.4135 5.44693 16.4202L2.71768 16.4547H2.71018C2.44993 16.4547 2.22343 16.2762 2.16268 16.022L1.54843 13.4187C1.42168 12.8795 1.54768 12.323 1.89343 11.891L8.95843 3.05448C8.96143 3.05148 8.96368 3.04773 8.96668 3.04473C9.74143 2.11848 11.1424 1.98198 12.0874 2.74023ZM8.17072 5.84025L2.77168 12.5937C2.64343 12.7542 2.59618 12.9612 2.64343 13.16L3.15418 15.3237L5.43343 15.2952C5.65018 15.293 5.85043 15.1962 5.98318 15.0312C6.66679 14.1759 7.52597 13.1009 8.40932 11.9955L8.72185 11.6044L9.0349 11.2127C9.86334 10.1759 10.6818 9.15155 11.3666 8.29415L8.17072 5.84025ZM9.83293 3.76248L8.87347 4.96125L12.0691 7.41445C12.6841 6.64402 13.0888 6.1366 13.1262 6.08823C13.2492 5.88873 13.2972 5.60673 13.2327 5.33523C13.1667 5.05698 12.9934 4.82073 12.7437 4.66998C12.6904 4.63323 11.4267 3.65223 11.3877 3.62148C10.9122 3.24048 10.2184 3.30648 9.83293 3.76248Z"
+                                    fill="#88D790" />
+                            </svg>сохранить</botton>
+
+                        <botton class="btn-reset btn_inpun__change btn_change flex" id="btnChangeTel_2" data-change="tel_2"><svg
+                                width="18" height="18" viewbox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.5631 15.3297C15.8736 15.3297 16.1256 15.5817 16.1256 15.8922C16.1256 16.2027 15.8736 16.4547 15.5631 16.4547H10.1233C9.81283 16.4547 9.56083 16.2027 9.56083 15.8922C9.56083 15.5817 9.81283 15.3297 10.1233 15.3297H15.5631ZM12.0874 2.74023C12.1249 2.76948 13.3797 3.74448 13.3797 3.74448C13.8357 4.01598 14.1919 4.50123 14.3269 5.07573C14.4612 5.64423 14.3637 6.23073 14.0509 6.72648C14.0488 6.72979 14.0468 6.73305 14.0395 6.74277L14.0339 6.75028C13.9831 6.81719 13.7624 7.09623 12.6486 8.49167C12.6383 8.50996 12.6266 8.52709 12.6138 8.54373C12.595 8.56827 12.5746 8.59082 12.5527 8.61135C12.4768 8.707 12.3965 8.80751 12.3122 8.91318L12.1412 9.12728C11.7885 9.56901 11.3701 10.0928 10.8738 10.7141L10.619 11.0329C9.66078 12.2323 8.43355 13.7679 6.86143 15.7347C6.51718 16.1637 6.00118 16.4135 5.44693 16.4202L2.71768 16.4547H2.71018C2.44993 16.4547 2.22343 16.2762 2.16268 16.022L1.54843 13.4187C1.42168 12.8795 1.54768 12.323 1.89343 11.891L8.95843 3.05448C8.96143 3.05148 8.96368 3.04773 8.96668 3.04473C9.74143 2.11848 11.1424 1.98198 12.0874 2.74023ZM8.17072 5.84025L2.77168 12.5937C2.64343 12.7542 2.59618 12.9612 2.64343 13.16L3.15418 15.3237L5.43343 15.2952C5.65018 15.293 5.85043 15.1962 5.98318 15.0312C6.66679 14.1759 7.52597 13.1009 8.40932 11.9955L8.72185 11.6044L9.0349 11.2127C9.86334 10.1759 10.6818 9.15155 11.3666 8.29415L8.17072 5.84025ZM9.83293 3.76248L8.87347 4.96125L12.0691 7.41445C12.6841 6.64402 13.0888 6.1366 13.1262 6.08823C13.2492 5.88873 13.2972 5.60673 13.2327 5.33523C13.1667 5.05698 12.9934 4.82073 12.7437 4.66998C12.6904 4.63323 11.4267 3.65223 11.3877 3.62148C10.9122 3.24048 10.2184 3.30648 9.83293 3.76248Z"
+                                    fill="#FFB911" />
+                            </svg>изменить</botton>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <section>
+        <div class="container flex container__content">
+            <div class="block_profile block--padding flex">
+                <h2 class="block_profile__zag">ДОПОЛНИТЕЛЬНЫЕ КОНТАКТНЫЕ ТЕЛЕФОНЫ</h2>
+                <div class="block_profile__info">
+                    Вы&nbsp;можете добавить до&nbsp;двух дополнительных номеров телефона.
+                    <p>Указанные номера могут быть использованы членами вашей семьи для получения скидки, накопления
+                        баллов и&nbsp;покупок по&nbsp;вашей карте.</p>
+                </div>
+
+                <div class="select_block">
+                    <div class="select_wrapper">
+                        <div class="select_menu">Выберите магазин</div>
+                        <span class="select_arrow"></span>
+                        <ul class="select_list list-reset">
+                            <li class="select_item">
+                                <label class="checkbox_form flex" for="check_1">
+                                    <input class="checkbox_form__item" type="checkbox" name="check_1" id="check_1">
+                                    <span class="select_check"></span>
+                                </label>
+                                <div class="text_brand_block flex">
+                                    <img src="/img/CK.png" alt="картинка">
+                                </div>
+                            </li>
+
+                            <li class="select_item">
+                                <label class="checkbox_form flex" for="check_2">
+                                    <input class="checkbox_form__item" type="checkbox" name="check_2" id="check_2">
+                                    <span class="select_check"></span>
+                                </label>
+                                <div class="text_brand_block flex">
+                                    <img src="/img/ТН.png" alt="картинка">
+                                </div>
+                            </li>
+
+                            <li class="select_item">
+                                <label class="checkbox_form flex" for="check_3">
+                                    <input class="checkbox_form__item" type="checkbox" name="check_3" id="check_3">
+                                    <span class="select_check"></span>
+                                </label>
+                                <div class="text_brand_block flex">
+                                    <img src="/img/3.png" alt="картинка">
+                                </div>
+                            </li>
+
+                            <li class="select_item">
+                                <label class="checkbox_form flex" for="check_4">
+                                    <input class="checkbox_form__item" type="checkbox" name="check_4" id="check_4">
+                                    <span class="select_check"></span>
+                                </label>
+                                <div class="text_brand_block flex">
+                                    <img src="/img/4.png" alt="картинка">
+                                </div>
+                            </li>
+
+                            <li class="select_item">
+                                <label class="checkbox_form flex" for="check_5">
+                                    <input class="checkbox_form__item" type="checkbox" name="check_5" id="check_5">
+                                    <span class="select_check"></span>
+                                </label>
+                                <div class="text_brand_block flex">
+                                    <img src="/img/5.png" alt="картинка">
+                                </div>
+                            </li>
+
+                            <li class="select_item">
+                                <label class="checkbox_form flex" for="check_6">
+                                    <input class="checkbox_form__item" type="checkbox" name="check_6" id="check_6">
+                                    <span class="select_check"></span>
+                                </label>
+                                <div class="text_brand_block flex">
+                                    <img src="/img/6.png" alt="картинка">
+                                </div>
+                            </li>
+
+                            <li class="select_item">
+                                <label class="checkbox_form flex" for="check_7">
+                                    <input class="checkbox_form__item" type="checkbox" name="check_7" id="check_7">
+                                    <span class="select_check"></span>
+                                </label>
+                                <div class="text_brand_block flex">
+                                    <img src="/img/ТН.png" alt="картинка">
+                                </div>
+                            </li>
+
+                            <li class="select_item">
+                                <label class="checkbox_form flex" for="check_8">
+                                    <input class="checkbox_form__item" type="checkbox" name="check_8" id="check_8">
+                                    <span class="select_check"></span>
+                                </label>
+                                <div class="text_brand_block flex">
+                                    <img src="/img/4.png" alt="картинка">
+                                </div>
+                            </li>
+
+
+                            <li class="select_item">
+                                <label class="checkbox_form flex" for="check_9">
+                                    <input class="checkbox_form__item" type="checkbox" name="check_9" id="check_9">
+                                    <span class="select_check"></span>
+                                </label>
+                                <div class="text_brand_block flex">
+                                    <img src="/img/6.png" alt="картинка">
+                                </div>
+                            </li>
+
+
+                            <li class="select_item">
+                                <label class="checkbox_form flex" for="check_10">
+                                    <input class="checkbox_form__item" type="checkbox" name="check_10" id="check_10">
+                                    <span class="select_check"></span>
+                                </label>
+                                <div class="text_brand_block flex">
+                                    <img src="/img/3.png" alt="картинка">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container flex container__content container__column">
+            <div class="block_profile block--padding flex">
+                <h2 class="block_profile__zag">ПОДПИСКА НА&nbsp;УВЕДОМЛЕНИЯ ОБ&nbsp;АКЦИЯХ</h2>
+                <div class="block_profile__info">
+                    Вы&nbsp;можете выбрать один или несколько магазинов, по&nbsp;которым вам интересно получать
+                    предложения
+                </div>
+
+
+                <div class="grid_stocks">
+                    <div class="grid_block flex grid_block__padding--right">
+                        <label class="checkbox_form flex" for="check_stocks_1">
+                            <input class="checkbox_form__item" type="checkbox" name="check_stocks_1" id="check_stocks_1">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <img src="/img/TOMMY-LOGO-.png" alt="картинка">
+                        </div>
+                    </div>
+
+                    <div class="grid_block flex">
+                        <label class="checkbox_form flex" for="check_stocks_2">
+                            <input class="checkbox_form__item" type="checkbox" name="check_stocks_2" id="check_stocks_2">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <img src="/img/CK-LOGO.png" alt="картинка">
+                        </div>
+                    </div>
+
+                    <div class="grid_block flex">
+
+                        <label class="checkbox_form flex" for="check_stocks_3">
+                            <input class="checkbox_form__item" type="checkbox" name="check_stocks_3" id="check_stocks_3">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <img src="/img/cross.png" alt="картинка">
+                        </div>
+                    </div>
+
+                    <div class="grid_block flex">
+                        <label class="checkbox_form flex" for="check_stocks_4">
+                            <input class="checkbox_form__item" type="checkbox" name="check_stocks_4" id="check_stocks_4">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <img src="/img/IW.png" alt="картинка">
+                        </div>
+                    </div>
+
+                    <div class="grid_block flex">
+                        <label class="checkbox_form flex" for="check_stocks_5">
+                            <input class="checkbox_form__item" type="checkbox" name="check_stocks_5" id="check_stocks_5">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <img src="/img/clarks.png" alt="картинка">
+                        </div>
+                    </div>
+
+                    <div class="grid_block flex">
+                        <label class="checkbox_form flex" for="check_stocks_6">
+                            <input class="checkbox_form__item" type="checkbox" name="check_stocks_6" id="check_stocks_6">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <img src="/img/REIMA.png" alt="картинка">
+                        </div>
+                    </div>
+
+                    <div class="grid_block flex">
+                        <label class="checkbox_form flex" for="check_stocks_7">
+                            <input class="checkbox_form__item" type="checkbox" name="check_stocks_7" id="check_stocks_7">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <img src="/img/markis.png" alt="картинка">
+                        </div>
+                    </div>
+
+                    <div class="grid_block flex">
+                        <label class="checkbox_form flex" for="check_stocks_8">
+                            <input class="checkbox_form__item" type="checkbox" name="check_stocks_8" id="check_stocks_8">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <img src="/img/soho.png" alt="картинка">
+                        </div>
+                    </div>
+
+                    <div class="grid_block flex">
+                        <label class="checkbox_form flex" for="check_stocks_9">
+                            <input class="checkbox_form__item" type="checkbox" name="check_stocks_9" id="check_stocks_9">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <img src="/img/mexx.png" alt="картинка">
+                        </div>
+                    </div>
+
+                    <div class="grid_block flex">
+                        <label class="checkbox_form flex" for="check_stocks_10">
+                            <input class="checkbox_form__item" type="checkbox" name="check_stocks_10" id="check_stocks_10">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <img src="/img/truman.png" alt="картинка">
+                        </div>
+                    </div>
+
+                    <div class="grid_block flex">
+                        <label class="checkbox_form flex" for="check_stocks_11">
+                            <input class="checkbox_form__item" type="checkbox" name="check_stocks_11" id="check_stocks_11">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <img src="/img/origami.png" alt="картинка">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container flex container__content container__column">
+            <div class="block_profile block--padding flex">
+                <h2 class="block_profile__zag">ЛЮБИМЫЙ БРЕНД</h2>
+                <div class="block_profile__info">
+                    Расскажите нам о&nbsp;своих любимых брендах, а&nbsp;мы&nbsp;учтем ваш выбор при составлении
+                    индивидуальных предложений
+                </div>
+
+
+                <div class="grid_brand">
+                    <div class="grid_brand__block flex grid_block__padding--right">
+                        <label class="checkbox_form flex" for="check_brend_1">
+                            <input class="checkbox_form__item" type="checkbox" name="check_brend_1" id="check_brend_1">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <strong class="text_brend">CALVIN KLEIN JEANS</strong>
+                        </div>
+
+                    </div>
+                    <div class="grid_brand__block flex">
+
+                        <label class="checkbox_form flex" for="check_brend_2">
+                            <input class="checkbox_form__item" type="checkbox" name="check_brend_2" id="check_brend_2">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <strong class="text_brend">CALVIN KLEIN JEANS</strong>
+                        </div>
+                    </div>
+                    <div class="grid_brand__block flex">
+
+                        <label class="checkbox_form flex" for="check_brend_3">
+                            <input class="checkbox_form__item" type="checkbox" name="check_brend_3" id="check_brend_3">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <strong class="text_brend">CALVIN KLEIN JEANS</strong>
+                        </div>
+                    </div>
+                    <div class="grid_brand__block flex">
+
+                        <label class="checkbox_form flex" for="check_brend_4">
+                            <input class="checkbox_form__item" type="checkbox" name="check_brend_4" id="check_brend_4">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <strong class="text_brend">UNITED COLORS OF BENETTON</strong>
+                        </div>
+                    </div>
+                    <div class="grid_brand__block flex">
+
+                        <label class="checkbox_form flex" for="check_brend_5">
+                            <input class="checkbox_form__item" type="checkbox" name="check_brend_5" id="check_brend_5">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <strong class="text_brend">UNITED COLORS OF BENETTON</strong>
+                        </div>
+                    </div>
+                    <div class="grid_brand__block flex">
+
+                        <label class="checkbox_form flex" for="check_brend_6">
+                            <input class="checkbox_form__item" type="checkbox" name="check_brend_6" id="check_brend_6">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <strong class="text_brend">UNITED COLORS OF BENETTON</strong>
+                        </div>
+                    </div>
+                    <div class="grid_brand__block flex">
+
+                        <label class="checkbox_form flex" for="check_brend_7">
+                            <input class="checkbox_form__item" type="checkbox" name="check_brend_7" id="check_brend_7">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <strong class="text_brend">REIMA</strong>
+                        </div>
+                    </div>
+                    <div class="grid_brand__block flex">
+
+                        <label class="checkbox_form flex" for="check_brend_8">
+                            <input class="checkbox_form__item" type="checkbox" name="check_brend_8" id="check_brend_8">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <strong class="text_brend">REIMA</strong>
+                        </div>
+                    </div>
+                    <div class="grid_brand__block flex">
+
+                        <label class="checkbox_form flex" for="check_brend_9">
+                            <input class="checkbox_form__item" type="checkbox" name="check_brend_9" id="check_brend_9">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <strong class="text_brend">REIMA</strong>
+                        </div>
+                    </div>
+                    <div class="grid_brand__block flex">
+
+                        <label class="checkbox_form flex" for="check_brend_10">
+                            <input class="checkbox_form__item" type="checkbox" name="check_brend_10" id="check_brend_10">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <strong class="text_brend">STRELLSON</strong>
+                        </div>
+                    </div>
+                    <div class="grid_brand__block flex">
+
+                        <label class="checkbox_form flex" for="check_brend_11">
+                            <input class="checkbox_form__item" type="checkbox" name="check_brend_11" id="check_brend_11">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <strong class="text_brend">STRELLSON</strong>
+                        </div>
+                    </div>
+
+                    <div class="grid_brand__block flex">
+
+                        <label class="checkbox_form flex" for="check_brend_12">
+                            <input class="checkbox_form__item" type="checkbox" name="check_brend_12" id="check_brend_12">
+                            <span class="select_check"></span>
+                        </label>
+                        <div class="text_brand_block flex">
+                            <strong class="text_brend">STRELLSON</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="container flex container__content">
+        <div class="footer flex">
+            <p class="footer_text">ПОДПИШИТЕСЬ НА&nbsp;НАШИ НОВОСТИ</p>
+            <div class="footer_seti">
+                <a href="#">
+                    <svg class="footer_svg__hover" width="42" height="42" viewbox="0 0 42 42" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="42" height="42" rx="21" fill="#0077FF" />
+                        <path
+                            d="M22.0316 28.35C14.1393 28.35 9.63758 22.832 9.45001 13.65H13.4034C13.5333 20.3894 16.4478 23.244 18.7564 23.8326V13.65H22.4789V19.4623C24.7586 19.2122 27.1538 16.5635 27.9618 13.65H31.6843C31.3798 15.1611 30.7729 16.5918 29.9015 17.8527C29.0301 19.1135 27.9129 20.1775 26.6199 20.978C28.0632 21.7094 29.338 22.7446 30.3602 24.0154C31.3824 25.2861 32.1288 26.7635 32.55 28.35H28.4523C28.0742 26.972 27.3057 25.7385 26.2431 24.804C25.1805 23.8695 23.8711 23.2757 22.4789 23.0969V28.35H22.0316Z"
+                            fill="white" />
+                    </svg>
+                </a>
+
+                <a class="footer_link__padding" href="#">
+                    <svg class="footer_svg__hover" width="42" height="42" viewbox="0 0 42 42" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="42" height="42" rx="21" fill="#27A6E5" />
+                        <path
+                            d="M29.4 13.2323L26.2443 29.7069C26.2443 29.7069 25.8028 30.8491 24.5899 30.3013L17.3088 24.5202L17.2751 24.5031C18.2586 23.5886 25.885 16.4878 26.2183 16.1659C26.7343 15.6674 26.414 15.3706 25.8149 15.7472L14.5496 23.1556L10.2035 21.6413C10.2035 21.6413 9.51958 21.3893 9.45378 20.8415C9.38712 20.2928 10.226 19.9961 10.226 19.9961L27.9438 12.7984C27.9438 12.7984 29.4 12.1358 29.4 13.2323Z"
+                            fill="#FEFEFE" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+</html>
